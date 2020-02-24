@@ -11,7 +11,9 @@ class Transfer
 
   def valid?
     #check both accounts to see if they are both valid. 
-    #.valid? checks validity. returns true || false. https://www.twilio.com/blog/2017/06/validate-ruby-objects-with-active-model-validations.html
+    #.valid? checks validity. returns true || false if no errors. 
+    #https://www.twilio.com/blog/2017/06/validate-ruby-objects-with-active-model-validations.html
+    #https://apidock.com/rails/ActiveModel/Validations/valid%3F
     sender.valid? && receiver.valid?
   end
 #check for validity of both accs, make sure sender balance is above the amount, status = pending to make sure transaction can only happen once.
