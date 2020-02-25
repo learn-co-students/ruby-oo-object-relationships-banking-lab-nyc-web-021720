@@ -17,7 +17,7 @@ describe "BankAccount" do
 
     it "always initializes with a status of 'open'" do
       expect(avi.status).to eq("open")
-    end
+    end 
 
     it "can't change its name" do
       expect { avi.name = "Bob" }.to raise_error(NoMethodError)
