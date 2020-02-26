@@ -31,7 +31,7 @@ class Transfer
     if execute_transaction #why can these methods just be called 
       sender.balance += amount
       receiver.balance -= amount 
-      # binding.pry 
+      binding.pry 
       self.status = "reversed"
     end
   end
